@@ -7,10 +7,10 @@ const Options = ({ options, updateFeedback, totalFeedback, reset }) => {
         return (
           <button
             className={css.btn}
-            key={index}
+            key={option}
             type="button"
-            onClick={(event) => {
-              updateFeedback(event.target.textContent);
+            onClick={(reset) => {
+              updateFeedback(option);
             }}
           >
             {option}
